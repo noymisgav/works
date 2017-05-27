@@ -3,6 +3,7 @@
 .ui-page {
     background-color: #FFF9D9 !important;
     max-width:400px;
+    margin:0 auto;
 }
 
 .ui-header p{
@@ -163,7 +164,7 @@ h1{
 
 .helmet_wrap .check_sign{
     top: 7vh;
-    right: 21vh;
+    right: 37vw;
 }
 
 .glasses_wrap .check_sign{

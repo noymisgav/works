@@ -1,4 +1,7 @@
 
+body{
+    margin:0 auto;
+}
 
 .ui-page {
     background-color: #FFF9D9 !important;
@@ -10,14 +13,14 @@
     font-size: 1.3em;
     font-weight: 100;
     margin-top: 15px;
-      
+
 }
 
 
 #pageone .back_btn {
     background-image: url(../images/back-home.svg);
     background-position: center;
-      background-size: 66%;
+    background-size: 66%;
 }
 
 /*
@@ -208,6 +211,9 @@ h1{
     width: 4vh !important;
     top: 1.6vh !important;
     box-shadow:none !important;
+    transform: scaleX(-1);   
+    left: 83vw !important;
+
 }
 
 #helmet_real{
@@ -225,7 +231,7 @@ h1{
 #pagetwo #helmet, .helmet_parts #helmet{
     height: 5vh;
     top: 2vh;
-    right: 2vh;
+    left: 2vh;
     position: absolute;
     margin-top: 0;
 }
@@ -327,11 +333,10 @@ h1{
 /* /////////////////////////////////////// GLOVES //////////////////////////////////// */
 #gloves_page #rightGlove {
     float: left;
-    right: 5vh;
+    left: 3vh;
     top: 0vh;
     height: 9vh;
-    transform: rotate(90deg);
-    left: initial;
+    transform: rotate(90deg) scaleY(-1);
 }
 
 #gloves_hotspot_1{
@@ -352,8 +357,8 @@ h1{
 
 #glasses_page #glasses{
     position: absolute;
-    top: -1vh;
-    right: 2vh;
+    top: 0vh;
+    left: 2vh;
     height: 5vh;
 }
 
@@ -362,7 +367,7 @@ h1{
 #suit_page #suit{
     position: absolute;
     top: -2.3vh;
-    right: 2vh;
+    left: 2vh;
     height: 7vh;
 }
 
@@ -383,7 +388,7 @@ h1{
     position: absolute;
     top: -1.3vh;
     height: 6vh;
-    right: 2vh;
+    left: 2vh;
 }
 
 #shoes_hotspot_1{   

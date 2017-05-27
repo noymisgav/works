@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="Styles/myStyle.css" rel="stylesheet" type="text/css" />
+
+        <script src="jScripts/jquery-2.1.1.min.js" type="text/javascript"></script> 
+        <!--        <script src="jScripts/JavaScript.js" type="text/javascript"></script>-->
+        <script src="jScripts/new_script.js" type="text/javascript"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+
+        <div data-role="page" id="pageone">
+            <div data-role="header">
+                   <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+                <h1> ציוד הלוחם - הציוד שלכם</h1>
+                <p>.לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+                    <div class="helmet_wrap">
+                        <a href="#pagetwo" data-transition="slide" class="parts">
+                            <img id="helmet"  src="images/helmet.svg"/>
+                        </a>
+                        <img class="check_sign" src="images/visited.svg"/>
+                    </div>
+
+                    <div class="glasses_wrap">
+                        <a href="#glasses_page" data-transition="slide" class="parts">
+                            <img id="glasses" class="parts" src="images/glasses.svg"/>
+                        </a>
+                        <img class="check_sign" src="images/visited.svg"/>
+                    </div>
+                    <div class="suit_wrap">
+                        <a href="#suit_page" data-transition="slide" class="parts">
+                            <img id="suit" class="parts" src="images/suit.svg"/>
+                        </a>
+                        <img class="check_sign" src="images/visited.svg"/>
+                    </div>
+                    <div class="gloves_wrap">
+                        <a href="#gloves_page" data-transition="slide" class="parts">
+                            <img id="rightGlove" src="images/rightGlove.svg"/>
+                        </a>
+                        <a href="#gloves_page" data-transition="slide" class="parts">
+                            <img id="leftGlove" src="images/leftGlove.svg"/>
+                        </a>
+                        <img class="check_sign" src="images/visited.svg"/>
+                    </div>
+                    <div class="shoes_wrap">
+
+                        <a href="#shoes_page" data-transition="slide" class="parts">
+                            <img id="shoes" class="parts" src="images/shoes.svg"/>
+                        </a>
+                        <img class="check_sign" src="images/visited.svg"/>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+
+
+        <!--   //////////////////////////////////// glasses page ////////////////////////////////////// -->
+
+        <div data-role="page" id="glasses_page" >
+            <div data-role="header">
+                <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+
+                <h1>משקפי המגן</h1>
+                <img id="glasses" class="parts/////" src="images/glasses.svg"/>
+                <p>לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+
+                    <img id="helmet_real" src="images/glasses.png"/>
+                    <a id="glasses_hotspot_1" class="hotspot" data-transition="flip" href="#"></a>
+                    <a id="gloves_hotspot_2" class="hotspot" data-transition="flip" href="#"></a>
+
+                </div>
+            </div>
+        </div> 
+
+        <!--   //////////////////////////////////// SUIT page ////////////////////////////////////// -->
+
+        <div data-role="page" id="suit_page" >
+            <div data-role="header">
+                <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+
+                <h1>חליפת הלוחם</h1>
+                <img id="suit" class="parts/////" src="images/suit.svg"/>
+                <p>לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+
+                    <img id="helmet_real" src="images/suit.png"/>
+                    <a id="suit_hotspot_1" class="hotspot" data-transition="flip" href="#"></a>
+                    <a id="suit_hotspot_2" class="hotspot" data-transition="flip" href="#"></a>
+
+                </div>
+            </div>
+        </div> 
+
+
+
+
+
+        <!--   //////////////////////////////////// gloves page ////////////////////////////////////// -->
+
+        <div data-role="page" id="gloves_page" >
+            <div data-role="header">
+                <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+
+                <h1>הכפפות</h1>
+                <img id="rightGlove" class="parts/////" src="images/rightGlove.svg"/>
+                <p>לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+
+                    <img id="helmet_real" src="images/glove.png"/>
+                    <a id="gloves_hotspot_1" class="hotspot" data-transition="flip" href="#"></a>
+                    <a id="gloves_hotspot_2" class="hotspot" data-transition="flip" href="#"></a>
+
+                </div>
+            </div>
+        </div> 
+
+
+        <!--   //////////////////////////////////// SHOES page ////////////////////////////////////// -->
+
+        <div data-role="page" id="shoes_page" >
+            <div data-role="header">
+                <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+
+                <h1>הנעליים</h1>
+                <img id="shoes" class="parts/////" src="images/shoes.svg"/>
+                <p>לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+
+                    <img id="helmet_real" src="images/boots.png"/>
+                    <a id="shoes_hotspot_1" class="hotspot" data-transition="flip" href="#"></a>
+                    <a id="shoes_hotspot_2" class="hotspot" data-transition="flip" href="#"></a> 
+                    <a id="shoes_hotspot_3" class="hotspot" data-transition="flip" href="#"></a>
+
+                </div>
+            </div>
+        </div> 
+
+
+        <!--   ////////////////////////////////////     helmet page ////////////////////////////////////// -->
+
+        <div data-role="page" id="pagetwo" >
+            <div data-role="header">
+                <a href="#pageone"  class="back_btn" data-transition="slide" data-direction="reverse"></a>
+
+                <h1>הקסדה</h1>
+                <img id="helmet" class="parts/////" src="images/helmet.svg"/>
+                <p>לוחצים. מבינים</p>
+            </div>
+
+            <div data-role="main">
+
+                <div class="suit_parts" data-role="content">      
+
+                    <img id="helmet_real" src="images/helmet.png"/>
+                    <a id="helmet_hotspot_1" class="hotspot" data-transition="flip" href="#helmet_1_pop"></a>
+                    <a id="helmet_hotspot_2" class="hotspot" data-transition="flip" href="#helmet_2_pop"></a>
+                    <!--                    <div id="hotspot_3" class="hotspot"></div>-->
+                    <a id="helmet_hotspot_4" class="hotspot" data-transition="flip" href="#helmet_4_pop"></a>
+                    <a id="helmet_hotspot_5" class="hotspot" data-transition="flip" href="#helmet_5_pop"></a>
+
+                </div>
+            </div>
+        </div> 
+
+
+
+
+
+
+
+        <!--   ////////////////////////////////////  Optimized damping insert ////////////////////////////////////// -->
+
+        <div data-role="page" id="helmet_1_pop" class="helmet_parts" >
+            <div data-role="header">
+                <a href="#pagetwo"  class="back_btn" data-transition="flip" data-direction="reverse"></a>
+
+                <h1>הקסדה</h1>
+                <img id="helmet" class="parts/////" src="images/helmet.svg"/>
+
+            </div>
+
+            <div data-role="main">
+                <a href="#pagetwo" class="exit" data-transition="flip" data-direction="reverse"><img src="images/exit.svg"/></a>
+                <div data-role="content"> 
+                    <p>
+                        <b> שכבת הגנה ובידוד</b>
+                        <br/>
+                        מגנה על הראש מפני חום
+                        <br/>
+                        ומפני חדירה של עצמים מסוכנים
+
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+        <!--   ////////////////////////////////////  TORCH ////////////////////////////////////// -->
+
+        <div data-role="page" id="helmet_2_pop" class="helmet_parts" >
+            <div data-role="header">
+                <a href="#pagetwo"  class="back_btn" data-transition="flip" data-direction="reverse"></a>
+
+                <h1>הקסדה</h1>
+                <img id="helmet" class="parts/////" src="images/helmet.svg"/>
+
+            </div>
+
+            <div data-role="main">
+                <a href="#pagetwo" class="exit" data-transition="flip" data-direction="reverse"><img src="images/exit.svg"/></a>
+                <div data-role="content"> 
+                    <p>
+                        <b>הפנס</b>
+                        <br/>
+                        בעל 3 עוצמות אור. 
+                        <br/>
+                        הבהוב של הפנס יעיד שהסוללה הולכת ונגמרת.
+                        <br/>
+                        <br/>
+                        <span class="orange-text">נסו להפעיל את הפנס </span>
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+
+        <!--   ////////////////////////////////////  EYE SHIELD ////////////////////////////////////// -->
+
+
+        <div data-role="page" id="helmet_4_pop" class="helmet_parts" >
+            <div data-role="header">
+                <a href="#pagetwo"  class="back_btn" data-transition="flip" data-direction="reverse"></a>
+
+                <h1>הקסדה</h1>
+                <img id="helmet" class="parts/" src="images/helmet.svg"/>
+
+            </div>
+
+            <div data-role="main">
+                <a href="#pagetwo" class="exit" data-transition="flip" data-direction="reverse"><img src="images/exit.svg"/></a>
+                <div data-role="content"> 
+                    <p>
+                        <b>מגן העיניים</b>
+                        <br/>
+                        מותאם במיוחד עבור פעולות שנמשכות זמן רב. 
+                        <br/>
+                        האיכות הגבוהה של הפלסטיק ממנו עשוי, מונעת מאמץ ועייפות ובכך מגנה על העיניים. מתאים גם ללובשי משקפיים.
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+
+
+
+        <!--   ////////////////////////////////////  ROTARY KNOB ////////////////////////////////////// -->
+
+        <div data-role="page" id="helmet_5_pop" class="helmet_parts" >
+            <div data-role="header">
+                <a href="#pagetwo"  class="back_btn" data-transition="flip" data-direction="reverse"></a>
+
+                <h1>הקסדה</h1>
+                <img id="helmet" class="parts/////" src="images/helmet.svg"/>
+
+            </div>
+
+            <div data-role="main">
+                <a href="#pagetwo" class="exit" data-transition="flip" data-direction="reverse"><img src="images/exit.svg"/></a>
+                <div data-role="content"> 
+                    <p>
+                        <b>התאמת מימדי הקסדה</b>
+                        <br/>
+                        על ידי סיבוב הכפתור ניתן להתאים את גודל הקסדה בכל עת במהלך המבצע 
+                        <br/>
+                        גם כאשר לובשים כפפות
+                        <br/>
+
+                        <span class="orange-text">נסו לחבוש את הקסדה ולהתאים אותה לעצמכם.</span>
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+
+
+    </body>
+
+</html>

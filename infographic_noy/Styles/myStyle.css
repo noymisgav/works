@@ -1,0 +1,400 @@
+
+
+.ui-page {
+    background-color: #FFF9D9 !important;
+    max-width:400px;
+}
+
+.ui-header p{
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 15px;
+      
+}
+
+
+#pageone .back_btn {
+    background-image: url(/images/back-home.svg);
+    background-position: center;
+      background-size: 66%;
+}
+
+/*
+font-family: 'almoni_dl_bold';
+font-family: 'almoni_dl_light';*/
+
+body *{
+    /*    font-family: 'almoni_dl_regular';*/
+    /*    font-family: 'Heebo', sans-serif;*/
+
+    font-family: 'almoni_dl_aaaregular', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: 'almoni_dl_aaabold', sans-serif;
+    background-color: #84353b;
+    color: #fff9d9;
+    text-shadow: none;
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: 1.4em !important;
+}
+#pageone h1{
+    background-color:#350211;
+}
+
+
+.selected_part{
+    opacity:1 !important;
+}
+
+.opacity{
+    opacity:0.15;
+}
+
+.ui-header{
+    display: block;
+    height: 15vh;
+    background-color: #fff9d9 !important;
+    border-bottom: none !important;
+}
+
+.ui-content{
+    padding:0 !important;
+    position: relative;
+    height: 85vh;
+    display: block;
+}
+
+#helmet{
+    height:8vh;
+    margin-top: 5vh;
+}
+
+#glasses{
+    height: 8vh;
+    margin-top: 2vh;
+    display: block;
+    margin: 2vh auto 0 auto;
+}
+#suit{
+    height:40vh;
+    margin-top: 3vh;
+}
+
+#shoes{
+    height:11vh;
+    display: block;
+    margin: 3vh auto 0 auto;
+}
+
+#rightGlove, #leftGlove{
+    height:10vh;
+    position: absolute;
+    top: 47vh;
+}
+
+#rightGlove{
+    float: left;
+    left: 8vh;
+}
+
+#leftGlove{
+    float: right;
+    right: 8vh;
+}
+/* /////////////////////////////////////// DATA PARTS //////////////////////////////////// */
+.data_parts_wraper{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.data_part{
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid #350211;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    padding: 0 10px;
+}
+
+.data_part h3{
+    color: #842139;
+}
+
+#helmet-data{
+    top: 13vh;
+}
+#glasses-data{
+    top: 24vh;
+}
+#gloves-data{
+    bottom: 45vh;
+}
+#shoes-data{
+    bottom: 20vh;
+}
+/* /////////////////////////////////////// VISITED   //////////////////////////////////// */
+
+.visited  + .check_sign, .visited .check_sign   {
+    transform:scale(1.1);
+}
+
+
+
+.check_sign{
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    transform:scale(0);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.helmet_wrap .check_sign{
+    top: 7vh;
+    right: 21vh;
+}
+
+.glasses_wrap .check_sign{
+    top: 15vh;
+    right: 32vh;
+}
+
+.suit_wrap .check_sign{
+    top: 27vh;
+    right: 19vh;
+}
+
+.gloves_wrap .check_sign{
+    top: 46vh;
+    right: 7vh;
+
+}
+
+.shoes_wrap .check_sign{
+    top: 69vh;
+    right: 21vh;
+}
+/*////////////////////*/
+
+.check_sign.visited{
+    transform:scale(1.1);
+}
+
+/* /////////////////////////////////////// HELMET //////////////////////////////////// */
+
+.orange-text{
+    color:darkorange;
+}
+
+.back_btn{
+    background-image: url(/images/back.svg);
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+    border: transparent !important;
+    height: 3vh !important;
+    width: 4vh !important;
+    top: 1.6vh !important;
+    box-shadow:none !important;
+}
+
+#helmet_real{
+    position: absolute;
+    max-width: 80vw;
+    bottom: 81px;
+    transform: translate(50%);
+    right: 50%;
+}
+
+#suit_page #helmet_real{
+    top:7vh;
+}
+
+#pagetwo #helmet, .helmet_parts #helmet{
+    height: 5vh;
+    top: 2vh;
+    right: 2vh;
+    position: absolute;
+    margin-top: 0;
+}
+
+.hotspot{
+    height: 3vh;
+    width: 3vh;
+    background-color: #f8b83e;
+    border-radius: 50%;
+    border: 3px solid #fef7d8;;
+    position:absolute;
+
+}
+
+.hotspot.visited{
+    background-image: url(/images/visited.svg);
+    background-size: 120%;
+    background-position: center center;
+    background-color: #fef7d8;
+}
+
+#helmet_hotspot_1{
+    top: 15vh;
+    left: 43vw;
+}
+
+#helmet_hotspot_2{
+    top: 25vh;
+    right: 13vw;
+}
+
+#helmet_hotspot_3{
+    top: 35vh;
+    left: 35vw;
+}
+
+#helmet_hotspot_4{
+    top: 41vh;
+    right: 12vw;
+}
+
+#helmet_hotspot_5{
+    top: 34vh;
+    left: 10vw;
+}
+
+
+.helmet_parts p
+{
+    direction: rtl;
+    background-color: white;
+    margin: 0 8vh;
+    padding: 2vh 3vh !important;
+    border-radius: 5px;
+    border: 3px solid #842139;
+    box-sizing: border-box;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height:77vh;
+}
+
+
+#helmet_5_pop p{
+    background-image: url(/images/helmet_photo/rotary.jpg);
+}
+
+
+#helmet_4_pop p{
+    background-image: url(/images/helmet_photo/glasses.jpg);
+}
+
+#helmet_2_pop p{
+    background-image: url(/images/helmet_photo/torch.jpg);
+}
+
+#helmet_1_pop p{
+    background-image: url(/images/helmet_photo/damping.jpg);
+}
+
+
+.helmet_parts p b
+{
+    margin-bottom: -7px;
+    display: block;
+    font-size: 1.2em;
+}
+
+.helmet_parts a.exit img{
+    position: absolute;
+    z-index: 100;
+    height: 35px;
+    top: 13vh;
+    right: 6vh;
+
+}
+
+/* /////////////////////////////////////// GLOVES //////////////////////////////////// */
+#gloves_page #rightGlove {
+    float: left;
+    right: 5vh;
+    top: 0vh;
+    height: 9vh;
+    transform: rotate(90deg);
+    left: initial;
+}
+
+#gloves_hotspot_1{
+    top: 15vh;
+    right: 33vh;
+}
+
+#gloves_hotspot_2{
+    top: 45vh;
+    right: 17vh;
+}
+
+/* /////////////////////////////////////// GLASSES //////////////////////////////////// */
+#glasses_hotspot_1{
+    top: 38vh;
+    right: 49vh;
+}
+
+#glasses_page #glasses{
+    position: absolute;
+    top: -1vh;
+    right: 2vh;
+    height: 5vh;
+}
+
+/* /////////////////////////////////////// SUIT //////////////////////////////////// */
+
+#suit_page #suit{
+    position: absolute;
+    top: -2.3vh;
+    right: 2vh;
+    height: 7vh;
+}
+
+
+#suit_hotspot_1 {
+    top: 17vh;
+    right: 20vh;
+}
+
+#suit_hotspot_2 {
+    top: 52vh;
+    right: 33vh;
+}
+
+/* /////////////////////////////////////// SHOES //////////////////////////////////// */
+
+#shoes_page #shoes{
+    position: absolute;
+    top: -1.3vh;
+    height: 6vh;
+    right: 2vh;
+}
+
+#shoes_hotspot_1{   
+    top: 57vh;
+    right: 11vh;
+}
+
+#shoes_hotspot_2{   
+    top: 35vh;
+}
+
+#shoes_hotspot_3{   
+    top: 23vh;
+    right: 9vh;
+}

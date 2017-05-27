@@ -14,7 +14,7 @@
 
 
 #pageone .back_btn {
-    background-image: url(/images/back-home.svg);
+    background-image: url(../images/back-home.svg);
     background-position: center;
       background-size: 66%;
 }
@@ -240,7 +240,7 @@ h1{
 }
 
 .hotspot.visited{
-    background-image: url(/images/visited.svg);
+    background-image: url(../images/visited.svg);
     background-size: 120%;
     background-position: center center;
     background-color: #fef7d8;
@@ -290,20 +290,20 @@ h1{
 
 
 #helmet_5_pop p{
-    background-image: url(/images/helmet_photo/rotary.jpg);
+    background-image: url(../images/helmet_photo/rotary.jpg);
 }
 
 
 #helmet_4_pop p{
-    background-image: url(/images/helmet_photo/glasses.jpg);
+    background-image: url(../images/helmet_photo/glasses.jpg);
 }
 
 #helmet_2_pop p{
-    background-image: url(/images/helmet_photo/torch.jpg);
+    background-image: url(../images/helmet_photo/torch.jpg);
 }
 
 #helmet_1_pop p{
-    background-image: url(/images/helmet_photo/damping.jpg);
+    background-image: url(../images/helmet_photo/damping.jpg);
 }
 
 

@@ -199,7 +199,7 @@ h1{
 }
 
 .back_btn{
-    background-image: url(/images/back.svg);
+    background-image: url(../images/back.svg);
     background-repeat: no-repeat;
     background-color: transparent !important;
     border: transparent !important;

@@ -253,14 +253,25 @@ h1{
     background-color: #fef7d8;
 }
 
+#pagetwo .helmet_hotspot{
+    background-image: url(../images/helmet.png);
+    height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-top: 70px;
+}
+
+
 #helmet_hotspot_1{
-    top: 15vh;
+ top: 4vh;
     left: 43vw;
 }
 
 #helmet_hotspot_2{
-    top: 25vh;
-    right: 13vw;
+    top: 12vh;
+    right: 17vw;
 }
 
 #helmet_hotspot_3{
@@ -269,13 +280,13 @@ h1{
 }
 
 #helmet_hotspot_4{
-    top: 41vh;
+    top: 30vh;
     right: 12vw;
 }
 
 #helmet_hotspot_5{
-    top: 34vh;
-    left: 10vw;
+    top: 22vh;
+    left: 13vw;
 }
 
 
@@ -283,7 +294,7 @@ h1{
 {
     direction: rtl;
     background-color: white;
-    margin: 0 8vh;
+    margin: 0 9vh;
     padding: 2vh 3vh !important;
     border-radius: 5px;
     border: 3px solid #842139;
@@ -351,8 +362,8 @@ h1{
 
 /* /////////////////////////////////////// GLASSES //////////////////////////////////// */
 #glasses_hotspot_1{
-     top: 42%;
-    left: 10%;
+    top: 38vh;
+    right: 49vh;
 }
 
 #glasses_page #glasses{

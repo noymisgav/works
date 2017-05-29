@@ -265,13 +265,13 @@ h1{
 
 
 #helmet_hotspot_1{
- top: 4vh;
-    left: 43vw;
+    top: 7%;
+    left: 45%;
 }
 
 #helmet_hotspot_2{
-    top: 12vh;
-    right: 17vw;
+    top: 19%;
+    right: 17%;
 }
 
 #helmet_hotspot_3{
@@ -280,13 +280,13 @@ h1{
 }
 
 #helmet_hotspot_4{
-    top: 30vh;
-    right: 12vw;
+    top: 48%;
+    right: 12%;
 }
 
 #helmet_hotspot_5{
-    top: 22vh;
-    left: 13vw;
+    top: 38%;
+    left: 13%;
 }
 
 
@@ -395,6 +395,16 @@ h1{
 
 /* /////////////////////////////////////// SHOES //////////////////////////////////// */
 
+#shoes_page .shoes_hotspot{
+    background-image: url(../images/helmet.png);
+    height: 60vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-top: 70px;
+}
+
 #shoes_page #shoes{
     position: absolute;
     top: -1.3vh;
@@ -403,15 +413,15 @@ h1{
 }
 
 #shoes_hotspot_1{   
-    top: 57vh;
-    right: 11vh;
+    top: 81%;
+    right: 18%;
 }
 
 #shoes_hotspot_2{   
-    top: 35vh;
+    top: 46%;
 }
 
 #shoes_hotspot_3{   
-    top: 23vh;
-    right: 9vh;
+    top: 17%;
+    right: 14%;
 }

@@ -342,6 +342,17 @@ h1{
 }
 
 /* /////////////////////////////////////// GLOVES //////////////////////////////////// */
+#gloves_page .gloves_hotspot{
+    background-image: url(../images/glove.png);
+    height: 60vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-top: 70px;
+}
+
+
 #gloves_page #rightGlove {
     float: left;
     left: 3vh;
@@ -351,19 +362,29 @@ h1{
 }
 
 #gloves_hotspot_1{
-    top: 15vh;
-    right: 33vh;
+    top: 15%;
+    right: 60%;
 }
 
 #gloves_hotspot_2{
-    top: 45vh;
-    right: 17vh;
+    top: 59%;
+    right: 30%;
 }
 
 /* /////////////////////////////////////// GLASSES //////////////////////////////////// */
+#glasses_page .glasses_hotspot{
+    background-image: url(../images/glasses.png);
+    height: 60vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-top: 70px;
+}
+
 #glasses_hotspot_1{
-    top: 38vh;
-    right: 49vh;
+top: 50%;
+    left: 6%;
 }
 
 #glasses_page #glasses{
@@ -375,6 +396,16 @@ h1{
 
 /* /////////////////////////////////////// SUIT //////////////////////////////////// */
 
+#suit_page .suit_hotspot{
+    background-image: url(../images/suit.png);
+    height: 70vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-top: 70px;
+}
+
 #suit_page #suit{
     position: absolute;
     top: -2.3vh;
@@ -384,19 +415,19 @@ h1{
 
 
 #suit_hotspot_1 {
-    top: 17vh;
-    right: 20vh;
+    top: 15%;
+    right: 36%;
 }
 
 #suit_hotspot_2 {
-    top: 52vh;
-    right: 33vh;
+    top: 64%;
+    right: 59%;
 }
 
 /* /////////////////////////////////////// SHOES //////////////////////////////////// */
 
 #shoes_page .shoes_hotspot{
-    background-image: url(../images/helmet.png);
+    background-image: url(../images/boots.png);
     height: 60vh;
     background-size: 80%;
     background-repeat: no-repeat;

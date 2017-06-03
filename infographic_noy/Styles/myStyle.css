@@ -3,6 +3,14 @@ body{
     margin:0 auto;
 }
 
+div[data-role="page"]{
+    height:100%;
+}
+
+div[data-role="main"]{
+    height:85%;
+}
+
 .ui-page {
     background-color: #FFF9D9 !important;
     max-width:400px;
@@ -59,7 +67,7 @@ h1{
 
 .ui-header{
     display: block;
-    height: 15vh;
+    height: 15%;
     background-color: #fff9d9 !important;
     border-bottom: none !important;
 }
@@ -67,46 +75,21 @@ h1{
 .ui-content{
     padding:0 !important;
     position: relative;
-    height: 85vh;
+    height: 100%;
     display: block;
 }
 
-#helmet{
-    height:8vh;
-    margin-top: 5vh;
-}
-
-#glasses{
-    height: 8vh;
-    margin-top: 2vh;
-    display: block;
-    margin: 2vh auto 0 auto;
-}
-#suit{
-    height:40vh;
-    margin-top: 3vh;
-}
-
-#shoes{
-    height:11vh;
-    display: block;
-    margin: 3vh auto 0 auto;
-}
-
-#rightGlove, #leftGlove{
-    height:10vh;
-    position: absolute;
-    top: 47vh;
-}
 
 #rightGlove{
-    float: left;
-    left: 8vh;
+    left: 20%;
+    position: absolute;
 }
 
 #leftGlove{
-    float: right;
-    right: 8vh;
+    right: 20%;
+    position: absolute;
+    top: 0%;
+    top: 0%;
 }
 /* /////////////////////////////////////// DATA PARTS //////////////////////////////////// */
 .data_parts_wraper{
@@ -133,18 +116,7 @@ h1{
     color: #842139;
 }
 
-#helmet-data{
-    top: 13vh;
-}
-#glasses-data{
-    top: 24vh;
-}
-#gloves-data{
-    bottom: 45vh;
-}
-#shoes-data{
-    bottom: 20vh;
-}
+
 /* /////////////////////////////////////// VISITED   //////////////////////////////////// */
 
 .visited  + .check_sign, .visited .check_sign   {
@@ -165,30 +137,79 @@ h1{
     transition: all 0.3s ease-in;
 }
 
-.helmet_wrap .check_sign{
-    top: 7vh;
-    right: 37vw;
+.parts, .parts img{
+    height:100%;
+    display:block;
+    margin: 0 auto;
 }
+
+.helmet_wrap{
+    height: 9%;
+    right: 50%;
+    transform: translate(50%);
+    top: 5%;
+    position: absolute;
+}
+
+.glasses_wrap {
+    height: 9.5%;
+    top: 16%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);  
+}
+
+
+
+.suit_wrap {
+    height: 48%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    top: 30%; 
+}
+
+.shoes_wrap {
+    top: 81%;
+    height: 13%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.gloves_wrap{
+    height: 13%;
+    top: 55%;
+    position: absolute;
+    width: 100%;
+}
+
+.helmet_wrap .check_sign{
+    top: 10%;
+    left: 10%;
+}
+
 
 .glasses_wrap .check_sign{
-    top: 15vh;
-    right: 32vh;
+    top: 15%;
+    right: -9%;
 }
 
+
 .suit_wrap .check_sign{
-    top: 27vh;
-    right: 19vh;
+    top: 0;
+    right: 19%;
+
 }
 
 .gloves_wrap .check_sign{
-    top: 46vh;
-    right: 7vh;
-
+    top: 0;
+    right: 20%;
 }
 
 .shoes_wrap .check_sign{
-    top: 69vh;
-    right: 21vh;
+    top: -7px;
+    right: 29%;
 }
 /*////////////////////*/
 
@@ -216,29 +237,18 @@ h1{
 
 }
 
-#helmet_real{
-    position: absolute;
-    max-width: 80vw;
-    bottom: 81px;
-    transform: translate(50%);
-    right: 50%;
-}
-
-#suit_page #helmet_real{
-    top:7vh;
-}
 
 #pagetwo #helmet, .helmet_parts #helmet{
-    height: 5vh;
-    top: 2vh;
-    left: 2vh;
+    height: 34%;
+    top: 10%;
+    left: 3%;
     position: absolute;
     margin-top: 0;
 }
 
 .hotspot{
-    height: 3vh;
-    width: 3vh;
+    height: 2.7vh;
+    width: 2.7vh;
     background-color: #f8b83e;
     border-radius: 50%;
     border: 3px solid #fef7d8;;
@@ -255,7 +265,7 @@ h1{
 
 #pagetwo .helmet_hotspot{
     background-image: url(../images/helmet.png);
-    height: 60vh;
+    height: 73%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -274,10 +284,6 @@ h1{
     right: 17%;
 }
 
-#helmet_hotspot_3{
-    top: 35vh;
-    left: 35vw;
-}
 
 #helmet_hotspot_4{
     top: 48%;
@@ -294,16 +300,15 @@ h1{
 {
     direction: rtl;
     background-color: white;
-    margin: 0 9vh;
-    padding: 2vh 3vh !important;
+    margin: 0 14%;
+    padding: 3%!important;
     border-radius: 5px;
     border: 3px solid #842139;
     box-sizing: border-box;
-
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    min-height:77vh;
+    min-height: 92%;
 }
 
 
@@ -332,19 +337,11 @@ h1{
     font-size: 1.2em;
 }
 
-.helmet_parts a.exit img{
-    position: absolute;
-    z-index: 100;
-    height: 35px;
-    top: 13vh;
-    right: 6vh;
-
-}
 
 /* /////////////////////////////////////// GLOVES //////////////////////////////////// */
 #gloves_page .gloves_hotspot{
     background-image: url(../images/glove.png);
-    height: 60vh;
+    height: 73%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -355,10 +352,11 @@ h1{
 
 #gloves_page #rightGlove {
     float: left;
-    left: 3vh;
-    top: 0vh;
-    height: 9vh;
     transform: rotate(90deg) scaleY(-1);
+    position: absolute;
+    top: 0%;
+    height: 60%;
+    left: 7%;
 }
 
 #gloves_hotspot_1{
@@ -374,7 +372,7 @@ h1{
 /* /////////////////////////////////////// GLASSES //////////////////////////////////// */
 #glasses_page .glasses_hotspot{
     background-image: url(../images/glasses.png);
-    height: 60vh;
+    height: 73%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -383,39 +381,39 @@ h1{
 }
 
 #glasses_hotspot_1{
-top: 50%;
+    top: 50%;
     left: 6%;
 }
 
 #glasses_page #glasses{
     position: absolute;
-    top: 0vh;
-    left: 2vh;
-    height: 5vh;
+    top: 10%;
+    left: 3%;
+    height: 36%;
 }
 
 /* /////////////////////////////////////// SUIT //////////////////////////////////// */
 
 #suit_page .suit_hotspot{
     background-image: url(../images/suit.png);
-    height: 70vh;
+    height: 100%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    margin-top: 70px;
+    /*    margin-top: 70px;*/
 }
 
 #suit_page #suit{
     position: absolute;
-    top: -2.3vh;
-    left: 2vh;
-    height: 7vh;
+    top: 4%;
+    left: 4%;
+    height: 48%;
 }
 
 
 #suit_hotspot_1 {
-    top: 15%;
+    top: 21%;
     right: 36%;
 }
 
@@ -428,7 +426,7 @@ top: 50%;
 
 #shoes_page .shoes_hotspot{
     background-image: url(../images/boots.png);
-    height: 60vh;
+    height: 73%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -438,9 +436,9 @@ top: 50%;
 
 #shoes_page #shoes{
     position: absolute;
-    top: -1.3vh;
-    height: 6vh;
-    left: 2vh;
+    top: 14%;
+    height: 34%;
+    left: 4%;
 }
 
 #shoes_hotspot_1{   

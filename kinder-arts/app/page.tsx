@@ -100,7 +100,11 @@ export default async function HomePage() {
 
               <div className="flex flex-col items-center gap-4 max-w-[180px] mx-auto">
                 <img src="/sentence.svg" alt="הגיגים" className="w-16 h-16 object-contain theme-icon" />
-                <h3 className="text-2xl font-black text-ink">הגיגים</h3>
+                <h3 className="text-2xl font-black text-ink">
+                  <Link href="/quotes" className="hover:underline focus-visible:underline">
+                    הגיגים
+                  </Link>
+                </h3>
                 <p className="text-ink-light text-base leading-relaxed">דברים שעפרי אמר ואנחנו לא רוצים לשכוח</p>
               </div>
 

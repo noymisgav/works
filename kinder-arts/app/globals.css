@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+.pekpek-stroke {
+  -webkit-text-stroke: 2px var(--ink);
+  color: transparent;
+}
+@media (min-width: 768px) {
+  .pekpek-stroke {
+    -webkit-text-stroke: 3px var(--ink);
+  }
+}
+
+.image-container {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #ffffff;
+}
+.image-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: darken;
+  background: #7d0000;
+  opacity: 0.1;
+}
+.image-container > img {
+  -webkit-filter: brightness(90%) contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+          filter: brightness(90%) contrast(125%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+  mix-blend-mode: none;
+}
+
+.image-container-fun {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #ff0000;
+}
+.image-container-fun::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  background: #002b96;
+  opacity: 1;
+}
+.image-container-fun > img {
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+}
+
+@font-face {
+  font-family: "Reisinger-Neta";
+  src: url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Regular.woff2") format("woff2"),
+       url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reisinger-Neta";
+  src: url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Medium.woff2") format("woff2"),
+       url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reisinger-Neta";
+  src: url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Bold.woff2") format("woff2"),
+       url("/fonts/Reisinger-Neta-web/Reisinger-Neta-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reisinger-Yonatan";
+  src: url("/fonts/Reisinger-Yonatan-web/Reisinger-Yonatan-Regular.woff2") format("woff2"),
+       url("/fonts/Reisinger-Yonatan-web/Reisinger-Yonatan-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/GoogleSans_17pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/GoogleSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cream:      #F7F2EA;
+  --cream-muted:#EDE8DF;
+  --card-bg:    #FFFFFF;
+  --border:     #E8E2D9;
+  --ink:        #1A1A1A;
+  --ink-light:  #5A5A5A;
+  --teal:       #dcaeb9;
+  --teal-dark:  #c49aaa;
+  --yellow:     #f0b75f;
+  --coral:      #d77953;
+}
+
+/* ── Theme overrides (CSS vars are set via JS in ThemeProvider) ── */
+[data-theme="fun"] body {
+  background: var(--cream);
+}
+
+.theme-logo,
+.theme-icon {
+  transition: filter 0.25s;
+}
+
+/* Logo: black → white in fun mode */
+[data-theme="fun"] .theme-logo {
+  filter: invert(1);
+}
+
+/* Icons: saturate to neon in fun mode */
+[data-theme="fun"] .theme-icon {
+  filter: saturate(6) brightness(1.4) contrast(1.1);
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-teal: var(--teal);
+  --color-teal-dark: var(--teal-dark);
+  --color-yellow: var(--yellow);
+  --color-coral: var(--coral);
+  --color-ink: var(--ink);
+  --color-ink-light: var(--ink-light);
+  --color-card: var(--card-bg);
+  --color-border: var(--border);
+  --font-sans: "Google Sans", sans-serif;
+  --font-display: "Reisinger-Neta", "Google Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Google Sans", system-ui, sans-serif;
+}
+
+.hover-pink:hover {
+  background-color: var(--teal) !important;
+}
+
+[data-theme="fun"] .hover-pink:hover {
+  color: #0d0b1a;
+}
+
+@media (max-width: 640px) {
+  .quote-section {
+    background: var(--cream) !important;
+  }
+}
+
+/* Smooth image rendering */
+img {
+  image-rendering: auto;
+}
+
+.image-filter {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-filter::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: darken;
+  background: #7d0000;
+  opacity: 0.1;
+}
+.image-filter > img {
+  filter: brightness(90%) contrast(125%) grayscale(100%) sepia(50%);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease forwards;
+}
+
+.quote-content strong,
+.quote-content b {
+  font-weight: 400;
+  color: var(--teal);
+}
+
+.quote-content-dark strong,
+.quote-content-dark b {
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
+}
+
+.quote-content-white strong,
+.quote-content-white b {
+  font-weight: 400;
+  color: #ffffff;
+}
+
